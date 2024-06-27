@@ -45,3 +45,24 @@ A high level explanation of each task is listed below. These explanations are de
 Please fork this repository and implement the features and improvements listed above. Once completed, submit a pull request with a detailed description of the changes you made. Include any relevant screenshots or documentation to demonstrate your work.
 
 We look forward to seeing your solutions!
+
+## Assumptions
+The aim of this challenge was to showcase my capabilities in developing a full stack app quickly. All the tasks were a good criterion to gauge a developer's capabilities. Given the limited time, I wanted to do a little bit of everything and demonstrate that, so I chose to do the following five tasks which captured the essence of the project.
+
+| Task                        | Completed Locally | Completed on Server | Completed with API |
+|-----------------------------|-------------------|---------------------|--------------------|
+| Basic Styling Enhancements  | ✓                 |                     |                    |
+| Task Completion Toggle      | ✓                 |                     |                    |
+| Local Storage Persistence   |                   | ✓                   |                    |
+| API Integration             |                   |                     | ✓                  |
+| User Authentication         |                   |                     | ✓                  |
+
+## Changes Made
+- Set up Bootstrap for responsive design.
+- Set up user registration.
+- Set up user sign-in method.
+- Set up Firebase collection to store tasks.
+- Updated dummy API to use Firebase's API methods to GET, POST, and DELETE data.
+- Set up user-specific task list filtering.
+
+#### Time it took: 3 - 4 hours
