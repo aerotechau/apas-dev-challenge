@@ -1,5 +1,5 @@
 /build/
 /node_modules/
 /.idea/
-firebase.ts
+# firebase.ts
 /backend
