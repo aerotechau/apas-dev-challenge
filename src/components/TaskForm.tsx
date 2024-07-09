@@ -8,9 +8,9 @@ const TaskForm: React.FC<TaskFormProps> = ({ onSave }) => {
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
 
-  const handleSubmit = (e: React.FormEvent): void => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    onSave({ name, description });
+    await onSave({ name, description });
     setName('');
     setDescription('');
   };
@@ -18,28 +18,30 @@ const TaskForm: React.FC<TaskFormProps> = ({ onSave }) => {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label>{'Task Name'}
+        <label className={'form-label w-100 text-start'}>{'Task Name'}
           <input
             type={'text'}
             value={name}
             onChange={(e) => setName(e.target.value)}
+            className={'form-control'}
             required
           />
         </label>
       </div>
       <div>
-        <label>
+        <label className={'form-label w-100 text-start'}>
           {'Description'}
-          <input
+          <textarea
             name={'Description'}
-            type={'text'}
+            rows={5}
             value={description}
             onChange={(e) => setDescription(e.target.value)}
+            className={'form-control'}
             required
           />
         </label>
       </div>
-      <button type={'submit'}>{'Save'}</button>
+      <button type={'submit'} className={'btn btn-primary'}>{'Save'}</button>
     </form>
   );
 };

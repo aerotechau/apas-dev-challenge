@@ -1,5 +1,11 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 body {
   font-family: Arial, sans-serif;
+}
+
+div#root {
+  min-height: 100vh !important;
 }
 
 .App {
